@@ -5,6 +5,7 @@ import com.example.medbookposts.models.PostsApiResponse;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
@@ -22,7 +23,9 @@ public interface TypicodeApi {
     );
 
     @POST("posts")
-    Call<List<PostsApiResponse>> addPost();
+    Call<PostsApiResponse> addPost(
+            @Body PostsApiResponse post
+    );
 
     @DELETE("posts/{id}/")
     Call<PostsApiResponse> deletePost(
