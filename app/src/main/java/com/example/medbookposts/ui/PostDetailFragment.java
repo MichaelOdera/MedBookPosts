@@ -112,6 +112,8 @@ public class PostDetailFragment extends Fragment implements View.OnClickListener
                     if(response.isSuccessful()){
                         mPosts.remove(mPost);
                         Toast.makeText(getActivity(), "Deleted Successfully", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(getActivity(), MainActivity.class);
+                        startActivity(intent);
                     }
                 }
 
