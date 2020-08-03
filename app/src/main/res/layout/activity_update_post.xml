@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/noticeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"/>
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:text="@string/edit_title"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/bodyEditText"
+        android:text="@string/edit_body"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="7dp"/>
+
+    <Button
+        android:id="@+id/submitPost"
+        android:text="@string/update_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/editedView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/titleEditedText"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="7dp"/>
+
+        <EditText
+            android:id="@+id/bodyEditedText"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="7dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
