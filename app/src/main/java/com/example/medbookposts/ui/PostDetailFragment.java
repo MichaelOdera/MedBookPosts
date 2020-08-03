@@ -20,6 +20,7 @@ import com.example.medbookposts.models.PostsApiResponse;
 import com.example.medbookposts.network.TypiCodeClient;
 import com.example.medbookposts.network.TypicodeApi;
 
+import org.jetbrains.annotations.NotNull;
 import org.parceler.Parcels;
 
 import java.util.ArrayList;
@@ -108,7 +109,7 @@ public class PostDetailFragment extends Fragment implements View.OnClickListener
             Call<PostsApiResponse> call = client.deletePost(mPost.getId());
             call.enqueue(new Callback<PostsApiResponse>() {
                 @Override
-                public void onResponse(Call<PostsApiResponse> call, Response<PostsApiResponse> response) {
+                public void onResponse(@NotNull Call<PostsApiResponse> call, @NotNull Response<PostsApiResponse> response) {
                     if(response.isSuccessful()){
                         mPosts.remove(mPost);
                         Toast.makeText(getActivity(), "Deleted Successfully", Toast.LENGTH_LONG).show();
@@ -118,8 +119,8 @@ public class PostDetailFragment extends Fragment implements View.OnClickListener
                 }
 
                 @Override
-                public void onFailure(Call<PostsApiResponse> call, Throwable t) {
-
+                public void onFailure(@NotNull Call<PostsApiResponse> call, @NotNull Throwable t) {
+                    Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
                 }
             });
         }

@@ -6,9 +6,12 @@
     <string name="welcome_to_this_posts_application">Welcome to this posts Application</string>
     <string name="check_posts">CHECK POSTS</string>
     <string name="update">UPDATE</string>
-    <string name="edit_body">Edit Body</string>
-    <string name="edit_title">Edit Title</string>
+    <string name="edit_body">Edit Body …</string>
+    <string name="edit_title">Edit Title …</string>
     <string name="update_post">UPDATE POST</string>
     <string name="add_post">Add Post</string>
     <string name="delete">delete</string>
+    <string name="title">Title:</string>
+    <string name="body">Body:</string>
+    <string name="add_new_post">Add New Post</string>
 </resources>

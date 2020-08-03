@@ -6,7 +6,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -26,9 +29,11 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class PostsListActivity extends AppCompatActivity {
+public class PostsListActivity extends AppCompatActivity implements View.OnClickListener{
 
     @BindView(R.id.postsRecyclerView) RecyclerView mRecyclerView;
+    @BindView(R.id.addPostButton)
+    Button mAddPostButton;
 
     private ProgressDialog mProgressDialog;
 
@@ -45,6 +50,8 @@ public class PostsListActivity extends AppCompatActivity {
         mProgressDialog = new ProgressDialog(PostsListActivity.this);
 
         createProgressDialogMessage();
+
+        mAddPostButton.setOnClickListener(this);
 
 
         TypicodeApi client = TypiCodeClient.getClient();
@@ -80,5 +87,13 @@ public class PostsListActivity extends AppCompatActivity {
         mProgressDialog.setTitle("Loading:");
         mProgressDialog.setMessage("Fetching Posts");
         mProgressDialog.show();
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view == mAddPostButton) {
+            Intent addPostIntent = new Intent(PostsListActivity.this, AddPostActivity.class);
+            startActivity(addPostIntent);
+        }
     }
 }
