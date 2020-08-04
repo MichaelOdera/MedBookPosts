@@ -16,7 +16,6 @@ Michael Ochieng' Odera
 ## Contacts
 In case of any bugs or improvements, contact me through email:michogelira@gmail.com or phone:+254733258286
 
-
 ## Bugs Encountered
 There were no major bugs to be encountered and the console would prove to be most helpful in case of any need to log out the errors
 
@@ -28,14 +27,16 @@ There were no major bugs to be encountered and the console would prove to be mos
 * Emulator Google Android
 * Android version 4.4(Minimum Android Version)
 
-
-
 ## Installation
 It is imperative that you install a JavaRuntimeEnvironment IDEA and Gradle dependencies else the system won't function as required. Knowledge
 of XML and JAVA is also mandatory. Knowledge of working with Android Studio is also important.
 
 ## Description
 This application fetches data from a json-placeholder Typicode api then displays it in a RecyclerView. The application then allows a user to update a post, delete a post or even add a new post using Retrofit RESTful framework.
+
+
+## CodeBeat Badge
+[![codebeat badge](https://codebeat.co/badges/1e99bf1f-4e30-412a-a02e-fc5f95dd45a6)](https://codebeat.co/projects/github-com-michaelodera-medbookposts-dev)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
