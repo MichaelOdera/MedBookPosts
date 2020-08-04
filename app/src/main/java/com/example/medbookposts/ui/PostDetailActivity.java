@@ -1,12 +1,11 @@
 package com.example.medbookposts.ui;
 
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
 
 import com.example.medbookposts.R;
 import com.example.medbookposts.adapters.PostDetailFragmentPagerAdapter;
@@ -19,7 +18,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class PostDetailActivity extends AppCompatActivity implements View.OnClickListener{
+public class PostDetailActivity extends AppCompatActivity{
 
     @BindView(R.id.viewPager)
     ViewPager mViewPager;
@@ -48,8 +47,5 @@ public class PostDetailActivity extends AppCompatActivity implements View.OnClic
 
     }
 
-    @Override
-    public void onClick(View view) {
 
-    }
 }
