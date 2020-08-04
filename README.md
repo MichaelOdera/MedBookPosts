@@ -36,6 +36,7 @@ This application fetches data from a json-placeholder Typicode api then displays
 
 
 ## CodeBeat Badge
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dff4fe4757cc48b39f81e105e99bec3b)](https://app.codacy.com/manual/MichaelOdera/MedBookPosts?utm_source=github.com&utm_medium=referral&utm_content=MichaelOdera/MedBookPosts&utm_campaign=Badge_Grade_Dashboard)
 [![codebeat badge](https://codebeat.co/badges/1e99bf1f-4e30-412a-a02e-fc5f95dd45a6)](https://codebeat.co/projects/github-com-michaelodera-medbookposts-dev)
 
 ## Contributing
