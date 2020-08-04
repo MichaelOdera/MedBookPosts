@@ -54,8 +54,6 @@ Run `gradle build` to build the project. The `build.gradle` file is important fo
 
 Run `run test` to execute the unit tests on your local directory after git cloning or downloading. Tests also include robolectric.
 
-## CoverAll Badge
-[![Coverage Status](https://coveralls.io/repos/github/MichaelOdera/MedBookPosts/badge.svg?branch=dev)](https://coveralls.io/github/MichaelOdera/MedBookPosts?branch=dev)
 
 ## Further help
 
