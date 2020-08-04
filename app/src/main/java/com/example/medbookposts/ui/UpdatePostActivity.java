@@ -1,11 +1,6 @@
 package com.example.medbookposts.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.medbookposts.R;
 import com.example.medbookposts.models.PostsApiResponse;
 import com.example.medbookposts.network.TypiCodeClient;
@@ -21,8 +18,6 @@ import com.example.medbookposts.network.TypicodeApi;
 
 import org.jetbrains.annotations.NotNull;
 import org.parceler.Parcels;
-
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -110,11 +105,4 @@ public class UpdatePostActivity extends AppCompatActivity implements View.OnClic
 
     }
 
-
-
-    private void createAlertBuilder(int position) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(UpdatePostActivity.this);
-        builder.setTitle("Post with id: "+position+"Has been updated Successfully");
-        builder.show();
-    }
 }
